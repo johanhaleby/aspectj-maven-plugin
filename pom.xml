@@ -8,7 +8,7 @@
     <version>40</version>
   </parent>
 
-  <groupId>com.nickwongdev</groupId>
+  <groupId>com.johanhaleby</groupId>
   <artifactId>aspectj-maven-plugin</artifactId>
   <version>1.12.7-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
@@ -35,13 +35,13 @@
 
   <issueManagement>
     <system>GitHub</system>
-    <url>https://github.com/nickwongdev/aspectj-maven-plugin/issues/</url>
+    <url>https://github.com/johanhaleby/aspectj-maven-plugin/issues/</url>
   </issueManagement>
 
   <scm>
-    <connection>scm:git:https://github.com/nickwongdev/aspectj-maven-plugin.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/nickwongdev/aspectj-maven-plugin.git</developerConnection>
-    <url>https://github.com/nickwongdev/aspectj-maven-plugin</url>
+    <connection>scm:git:https://github.com/johanhaleby/aspectj-maven-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/johanhaleby/aspectj-maven-plugin.git</developerConnection>
+    <url>https://github.com/johanhaleby/aspectj-maven-plugin</url>
     <tag>aspectj-maven-plugin-1.12.1</tag>
   </scm>
   <distributionManagement>
@@ -109,6 +109,10 @@
       <name>Nicholas Wong</name>
       <email>nickwongdev@gmail.com</email>
       <timezone>America/LosAngeles</timezone>
+    </contributor>
+    <contributor>
+      <name>Johan Haleby</name>
+      <timezone>Europe/Stockholm</timezone>
     </contributor>
   </contributors>
 
@@ -202,7 +206,7 @@
         <version>3.5</version>
         <configuration>
           <!-- see: https://github.com/apache/maven-plugin-tools/pull/11 -->
-          <mojoDependencies>com.nickwongdev:aspectj-maven-plugin</mojoDependencies>
+          <mojoDependencies>com.johanhaleby:aspectj-maven-plugin</mojoDependencies>
         </configuration>
       </plugin>
       <plugin>
@@ -291,7 +295,7 @@
         <version>3.5</version>
         <configuration>
           <!-- see: https://github.com/apache/maven-plugin-tools/pull/11 -->
-          <mojoDependencies>com.nickwongdev:aspectj-maven-plugin</mojoDependencies>
+          <mojoDependencies>com.johanhaleby:aspectj-maven-plugin</mojoDependencies>
         </configuration>
       </plugin>
       <plugin>
