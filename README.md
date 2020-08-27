@@ -1,5 +1,15 @@
 This is a fork of the aspectj-maven-plugin that has Java 14 support.
 
+Available in maven central:
+
+```xml
+<dependency>
+	<groupId>se.haleby.aspectj</groupId>
+	<artifactId>aspectj-maven-plugin</artifactId>
+	<version>1.12.7</version>
+</dependency>
+```
+
 # Mojohaus AspectJ-Maven-Plugin
 
 This plugin  weaves AspectJ aspects into your classes using the AspectJ compiler ("ajc").
