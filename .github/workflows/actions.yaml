@@ -1,0 +1,25 @@
+jobs:
+	build:
+        runs-on: ubuntu-latest
+        strategy:
+        matrix:
+            java: [8, 11, 14]
+        steps:
+          - name: Checkout repo
+            uses: actions/checkout@v2
+          - name: Set up JDK.
+            uses: actions/setup-java@v1
+            with:
+                java-version: ${{ matrix.java }}
+                architecture: x64
+          - name: Cache Maven packages
+            uses: actions/cache@v2
+            with:
+              path: ~/.m2
+              key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+              restore-keys: ${{ runner.os }}-m2
+          - name: Validate dependency
+            run: mvn --show-version --errors --batch-mode validate dependency:go-offline
+          - name: Install with Maven
+            # Remove site since have no idea how to add graphviz package.
+            run: mvn --show-version --errors --batch-mode clean install
