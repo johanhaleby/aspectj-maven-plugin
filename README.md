@@ -1,4 +1,4 @@
-This is a fork of the aspectj-maven-plugin that has Java 14 support.
+This is a fork of the aspectj-maven-plugin that has Java 16 support.
 
 Available in maven central:
 
@@ -6,7 +6,7 @@ Available in maven central:
 <dependency>
 	<groupId>se.haleby.aspectj</groupId>
 	<artifactId>aspectj-maven-plugin</artifactId>
-	<version>1.12.7</version>
+	<version>1.12.8</version>
 </dependency>
 ```
 
